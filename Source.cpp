@@ -7,7 +7,7 @@ bool exitf = false;
 
 bool getObstacle(HWND win, HDC& h) {
 	
-	POINT temp = { tail.x + 200, tail.y + 30};
+	POINT temp = { tail.x + 300, tail.y + 30};
 	SetCursorPos(temp.x, temp.y);
 	COLORREF c = GetPixel(h, temp.x, temp.y);
 	if (c == 5460819) {
